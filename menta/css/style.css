@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* リセットCSS */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-radius: 0;
+    text-align: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*common*/
+.wrapper{
+    width: 1004px;
+    margin: 0 auto;
+}
+
+.wrap{
+    margin-top: 10%;;
+}
+
+.innner{
+    padding: 15%;
+}
+
+.sttl{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.mttl{
+    font-size: 24px;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: bold;
+    margin-top: 43px;
+    padding-bottom: 15px;
+}
+
+.ttl{
+    font-size: 48px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.ttl::after{
+    content: "";
+    display: block;
+    width: 65px;
+    height :5px;
+    background-color:#0A0A0A;
+    top: 0;
+    left: 10px;
+    margin-top: 15px;
+}
+
+.flex_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_box .flex_box_item{
+    width: 324px;
+}
+
+.flex_box .flex_box_item img{
+    width: 100%;
+}
+
+.sp_br{
+    display: none;
+}
+
+.sp{
+    display: none;
+}
+
+/*nav*/
+nav{
+    width: 50%;
+}
+
+.nav_wrap{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav_wrap .logo{
+    width: 50%;
+}
+
+.nav_wrap .nav{
+    width: 80%;
+}
+
+.nav_wrap .nav ul{
+    list-style: none;
+}
+
+.nav_wrap .nav ul li{
+    width: 19%;
+    display: inline-block;
+    color: #fff;
+	position: relative;
+	text-decoration: none;
+    text-align: center;
+}
+
+.nav_wrap .nav ul li a{
+    padding: 0 0 5px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_wrap .nav ul li a::after{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #fff;
+	transition: all 0.3s ease 0s;
+}
+
+.nav_wrap .nav ul li a:hover::after{
+    display: inline-block;
+    width: 100%;
+}
+
+/*logo*/
+.logo{
+    width: 120px;
+    height: 24px;
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.logo span.logo_txt{
+    font-size: 12px;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: bold;
+}
+
+/*mainVisual*/
+.mainVisual_wrap{
+    width: 100%;
+    background: url('../images/karly-jones-9RgvK_0bntg-unsplash.png')  center center / cover no-repeat;
+    height: 800px;
+}
+
+.mainVisual_wrap .mainVisual_all{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 64px;
+    top: 40%;
+    left: 10%;
+}
+
+.mainVisual_wrap .mainVisual_txt_wrap{
+    color: #fff;
+    position: absolute;
+    font-size: 24px;
+    top: 160px;
+    left: 10px;
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    border: 5px solid;
+    border-color: #fff #fff transparent transparent;
+    transform: rotate(133deg) translateX(-50%);
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+}
+
+/*about*/
+.about .flex_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .flex_box .flex_box_l{
+    width: 409px;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.about .flex_box .flex_box_r{
+    width: 494px;
+    height: 329.29px;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+}
+
+/*item*/
+.item .flex_box .flex_box_item .item_name{
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    margin-top: 43px;
+}
+
+.item .flex_box .flex_box_item .item_txt{
+    font-size: 16px;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-top: 23px;
+    padding-bottom: 15px;
+}
+
+/*price*/
+.price{
+    position: relative;
+    height: 1000px;
+    width: 1004px;
+    margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 152px;
+}
+
+.price .price_wrap{
+    text-align: center !important;
+}
+
+.price .price_wrap .price_ttl::after{
+    top: 22%;
+    left: 44%;
+    position: absolute;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.price .price_wrap .sttl{
+    margin-top: 18px;
+}
+
+.price .price_wrap{
+    width: 494px;
+    border: 5px #A38787 solid;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    background:rgba(255,255,255,0.8);
+}
+
+.price .price_wrap .menu_price{
+    margin-top: 81px;
+}
+
+.price .price_wrap .menu_price dl{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-bottom: 1px #000 dashed;
+    padding: 10px;
+}
+
+.price .price_wrap .menu_price dl dt{
+    width: 50%;
+}
+
+.price .price_wrap .menu_price dl dd{
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+
+.price .price_img{
+    width: 663px;
+    height: 884px;
+    background: url(../images/jazmin-quaynor-470729-unsplash.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: 0;
+    top: 120px;
+    position: absolute;
+    z-index: -9999;
+}
+
+/*blog*/
+.blog{
+    background-color: #F2F2F2;
+    padding-bottom: 136px;
+    padding-top: 134px;
+}
+
+/*address*/
+.access{
+    padding-bottom: 219px;
+}
+
+.address_box_l{
+    width: 40%;
+}
+
+.address_box_r{
+    width: 60%;
+}
+
+.address_box_l dl{
+    padding-bottom: 29px;
+}
+
+.address_box_l dl dt{
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.access_txt_wrap{
+    padding-top: 152px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.access_txt{
+    padding: 31px 0 0 0;
+    letter-spacing: 0.8px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 264px;
+    background-color: #6F6565;
+    position: relative;
+}
+
+footer .footer_wrap{
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+@media screen and (max-width:1100px) {
+    /*common*/
+    .wrapper{
+        max-width:90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .innner{
+        padding: 5%;
+    }
+
+    .ttl{
+        font-size: 38px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .sp_br{
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 36px;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 21px;
+    }
+
+    .flex_box{
+        display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .arrow{
+        left: 45%;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .sp{
+        display: block;
+    }
+
+    /**************** 以下、メニューのスタイリング ****************/
+
+    /*ハンバーガーメニュー*/
+  
+  /**************** 以下、ハンバーガーボタンのスタイリング ****************/
+    .btn {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    
+    /***** 真ん中のバーガー線 *****/
+    .btn-line {
+        /* 線の長さと高さ */
+        width: 50%;
+        height: 4px;
+        /* バーガー線の色 */
+        background-color: #333;
+        /* バーガー線の位置基準として設定 */
+        position: relative;
+        transition: .2s;
+    }
+    
+    /***** 上下のバーガー線 *****/
+    .btn-line::before,
+    .btn-line::after {
+        content: "";
+        /* 基準線と同じ大きさと色 */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        transition: .2s;
+    }
+    .btn-line::before {
+        /* 上の線の位置 */
+        transform: translateY(-16px);
+    }  
+    
+    .btn-line::after {
+        /* 下の線の位置 */
+        transform: translateY(16px);
+    }
+    
+    /***** メニューオープン時 *****/
+    .btn-line.open {
+        /* 真ん中の線を透明に */
+        background-color: transparent;
+    }
+    
+    .btn-line.open::before,
+    .btn-line.open::after {
+        content: "";
+        transition: .2s;
+    }
+    
+    .btn-line.open::before {
+        /* 上の線を傾ける */
+        transform: rotate(45deg);
+    }
+    
+    .btn-line.open::after {
+        /* 上の線を傾ける */
+        transform: rotate(-45deg);
+    }
+    
+    /* ボタンフォーカス時の装飾 */
+    .btn:focus .btn-line ,
+    .btn:focus .btn-line::before ,
+    .btn:focus .btn-line::after {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+    }
+    
+    .btn:focus .btn-line.open {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+        
+    .btn:focus .btn-line.open::before ,
+    .btn:focus .btn-line.open::after {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+    }
+    .menu {
+        position: fixed;
+        /* メニューの位置マイナス指定で画面外に */
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        /* メニューを縦に */
+        display: flex;
+        flex-direction: column;
+        color: #efefef;
+        background-color: #fff;
+        transition: .3s;
+    }
+
+    .menu-list {
+        width: auto;
+        height: 100%;
+        /* メニューテキスト位置をリスト内中心に */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-list:hover {
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    /***** メニューオープン時位置0にして画面内に *****/
+    .menu.open {
+        position: absolute;
+        right: 0;
+    }
+
+    .nav_wrap .nav ul li a {
+        color: #000;
+    }
+
+    .nav_wrap {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        opacity: 0.95;
+        z-index: 2;
+    }
+
+    .nav_wrap .nav ul {
+        padding: 20% 0 0 0;
+    }
+
+    .nav_wrap .nav ul li{
+        font-size: 24px;
+        padding: 20% 0 0 0;
+        display: inline-block;
+        color: #fff;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        z-index: 9999999;
+    }
+
+    .menu-list {   
+        height: auto;
+    }
+
+
+    .menu {
+        width: 80%;
+    }
+
+    /*mainVisual*/
+    .mainVisual_wrap{
+        max-width:100%;
+        background: url('../images/karly-jones-9RgvK_0bntg-unsplash.png')  center / cover;;
+        background-size: cover;
+        height: 667px !important;
+    }
+
+    .mainVisual_wrap .mainVisual_all{
+        width: auto;
+        color: #fff;
+        position: absolute;
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 64px;
+        top: 40%;
+        left: 10%;
+    }
+
+    .mainVisual_wrap .mainVisual_txt_wrap{
+        width: auto;
+    }
+
+    .about .flex_box {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .mainVisual_wrap .mainVisual_txt {
+        font-size: 40px;
+        top: 25%;
+        left: 5%;
+    }
+
+    .mainVisual_wrap .mainVisual_stxt.num1 {
+        color: #fff;
+        font-size: 16px;
+        top: 40%;
+        left: 5%;
+    }
+
+    .mainVisual_wrap .mainVisual_stxt.num2 {
+        display: none;
+    }
+
+    /*about*/
+    .about{
+        margin-top: 103px;
+        margin-bottom: 126px;
+    }
+
+    .about .flex_box .flex_box_l {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        background-color: #fff;
+        border: none;
+        opacity: 1;
+    }
+
+    .about .flex_box .flex_box_r {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+    }
+
+    /*item*/
+    .item .flex_box .flex_box_item .item_txt {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /*price*/
+    .price{
+        width: auto;
+        margin-top: 120px;
+    }
+
+    .price .price_wrap {
+        max-width: 90%;
+        width: 90%;
+        top: 40%;
+        left: 5%;
+    }
+
+    .price .price_img{
+        width: 100%;
+        margin: 0;
+        background: url(../images/jazmin-quaynor-470729-unsplash.png) center no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.8;
+        z-index: -9999;
+    }
+
+    .price .price_wrap .price_ttl::after{
+        top: 27%;
+        left: 44%;
+    }
+
+    /*blog*/
+    .flex_box .flex_box_item {
+        width: auto;
+    }
+    .flex_blog{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    .flex_blog .flex_box_item{
+        width: 48%;
+    }
+
+    /*address*/
+    .address_box_l{
+        width: 100%;
+    }
+    
+    .address_box_r{
+        width: auto;
+    }
+
+    .address_box_r iframe{
+        width: 100%;
+    }
+
+    /*footer*/
+    footer {
+        height: 180px;
+    }
+
+    footer .footer_wrap{
+        width: 70%;
+        text-align: center;
+        color: #fff;
+        font-size:40px;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+   
+}
+
+
+@media screen and (max-width:375px) {
+
+  
+
+}

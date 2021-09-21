@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Cosmetic</title>
+</head>
+<body>
+    <script>
+        $(function () {
+            $('.js-btn').on('click', function () { // js-btnクラスをクリックすると、
+                $('.menu , .btn , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+            })
+        });
+    </script>
+    <div class="nav_wrap">
+        <div class="logo">
+            LogoLOGO
+            <br><span class="logo_txt">コスメです。</span>
+        </div>
+        <button type="button" class="btn js-btn">
+            <span class="btn-line"></span>
+        </button>
+          <nav>
+            <div class="nav menu">
+                <ul class="menu">
+                    <li class="menu-list"><a href="#">About</a></li>
+                    <li class="menu-list"><a href="#">Staff</a></li>
+                    <li class="menu-list"><a href="#">Menu</a></li>
+                    <li class="menu-list"><a href="#">Blog</a></li>
+                    <li class="menu-list"><a href="#">Access</a></li>
+                </ul>
+            </div>
+          </nav>
+    </div>
+    <main>
+        <section class="mainVisual_wrap">
+            <div class="mainVisual_all">
+                <h1 class="mainVisual_txt">
+                    Awesome<br>
+                    Cosmetic
+                </h1>
+                <div class="mainVisual_txt_wrap">
+                    <p class="mainVisual_stxt num1">
+                        コスメのセレクトショッ<br class="sp_br">プのサイトです
+                    </p>
+                    <p class="mainVisual_stxt num2">
+                        コスメのセレクトショップのサイトです。
+                    </p>
+                </div>
+            </div>
+            <div class="arrow">
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="about wrap">
+                <div class="flex_box">
+                    <div class="flex_box_l">
+                        <div class="innner">
+                            <h2 class="ttl">About</h2>
+                            <div class="sttl">私たちについて</div>
+                            <div class="mttl">お店のコンセプト</div>
+                            <div class="about_txt">
+                                コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex_box_r">
+                            <img src="images/foto-t-dKI7fKu-qu0-unsplash.png" alt="unsplash">
+                        </div>
+                </div>
+            </section>
+            <section class="item wrap">
+                <h2 class="ttl">item</h2>
+                <div class="sttl">アイテム</div>
+                <ul class="flex_box">
+                    <li class="flex_box_item">
+                        <img src="images/onne-beauty-lZ7tao79Y1A-unsplash.png" alt="アイテム1">
+                        <dl>
+                            <dt class="sttl"><figcaption>ファンデーション</figcaption></dt>
+                            <dd class="item_name">商品名</dd>
+                            <dd class="item_txt">
+                                この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="flex_box_item">
+                        <img src="images/caroline-attwood-E1rH__X9SA0-unsplash.png" alt="アイテム2">
+                        <dl>
+                            <dt class="sttl"><figcaption>リップ</figcaption></dt>
+                            <dd class="item_name">コスメ2コスメ2コスメ2コス メ2コスメ2</dd>
+                            <dd class="item_txt">
+                                この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="flex_box_item">
+                        <img src="images/raphael-lovaski-510338-unsplash.png" alt="アイテム3">
+                        <dl>
+                            <dt class="sttl"><figcaption>アイシャドー</figcaption></dt>
+                            <dd class="item_name">コスメ3コスメ3コスメ3コスメ3</dd>
+                            <dd class="item_txt">
+                                この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="price wrap pc">
+            <div class="flex_box">
+                <div class="price_wrap flex_box_l pc">
+                    <div class="innner">
+                        <h2 class="price_ttl ttl">Price</h2>
+                        <div class="sttl">料金表</div>
+                        <div class="menu_price">
+                            <dl>
+                                <dt>アイライナー</dt>
+                                <dd>¥3,000</dd>
+                            </dl>
+                            <dl>
+                                <dt>リップ</dt>
+                                <dd>¥3,000</dd>
+                            </dl>
+                            <dl>
+                                <dt>グロス</dt>
+                                <dd>¥3,000</dd>
+                            </dl>
+                            <dl>
+                                <dt>シャドウ</dt>
+                                <dd>¥3,000</dd>
+                            </dl>
+                            <dl>
+                                <dt>マニキュア</dt>
+                                <dd>¥3,000</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="price_img flex_box_r">
+                </div>
+            </section>
+                <!-- sp表示用 -->
+            <section class="price wrap sp">
+                <div class="flex_box">
+                    <div class="price_wrap flex_box_l sp">
+                        <div class="innner">
+                            <h2 class="price_ttl ttl">Price</h2>
+                            <div class="sttl">料金表</div>
+                            <div class="menu_price">
+                                <dl>
+                                    <dt>アイライナー</dt>
+                                    <dd>¥3,000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>リップ</dt>
+                                    <dd>¥3,000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>グロス</dt>
+                                    <dd>¥3,000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>シャドウ</dt>
+                                    <dd>¥3,000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>マニキュア</dt>
+                                    <dd>¥3,000</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_img flex_box_r">
+                    </div>
+                </section>
+        <section class="blog wrap">
+            <div class="wrapper">
+                <h2 class="ttl">Blog</h2>
+                <div class="sttl">ブログ</div>
+                <ul class="flex_box flex_blog">
+                    <li class="flex_box_item">
+                        <img src="images/kyle-smith-528243-unsplash.png" alt="アイテム1">
+                        <div class="sttl"><time datetime="2019-12-03">2019/12/3</time></div>
+                        <div class="item_name">商品名</div>
+                        <div class="item_txt">
+                            この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+                        </div>
+                    </li>
+                    <li class="flex_box_item">
+                        <img src="images/tamara-bellis-131260-unsplash.png" alt="アイテム2">
+                        <div class="sttl"><time datetime="2019-11-02">2019/11/2</time></div>
+                        <div class="item_name">コスメ2コスメ2コスメ2コス メ2コスメ2</div>
+                        <div class="item_txt">
+                            この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+                        </div>
+                    </li>
+                    <li class="flex_box_item">
+                        <img src="images/マスクグループ 4.png" alt="アイテム3">
+                        <div class="sttl"><time datetime="2019-11-02">2019/11/2</time></div>
+                        <div class="item_name">コスメ3コスメ3コスメ3コスメ3</div>
+                        <div class="item_txt">
+                            この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="wrapper">
+            <address class="access wrap">
+                <h2 class="ttl">Access</h2>
+                <div class="sttl">アクセス</div>
+                <div class="flex_box">
+                    <div class="address_box_l flex_box_l">
+                        <dl>
+                            <dt>ADRESS</dt>
+                            <dd>大阪市北区芝田一丁目</dd>
+                        </dl>
+                        <dl>
+                            <dt>TELL</dt>
+                            <dd>000-0000-0000</dd>
+                        </dl>
+                        <dl>
+                            <dt>ON TIME</dt>
+                            <dd>平日</dd>
+                        </dl>
+                        <dl>
+                            <dt>OFF TIME</dt>
+                            <dd>土曜日曜祝日</dd>
+                        </dl>
+                    </div>
+                    <div class="address_box_r flex_box_r">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9491342008605!2d135.49557391523243!3d34.70646288043299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e691c5c21a61%3A0x426587edd82ea9dc!2z44CSNTMwLTAwMTIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66Iqd55Sw77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1630852455356!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <ol class="access_txt_wrap">
+                    <h3 class="mttl">
+                        道順の説明
+                    </h3>
+                    <li class="access_txt">
+                        ①行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+                    </li>
+                    <li class="access_txt">
+                        ②行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+                    </li>
+                    <li class="access_txt">
+                        ③行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+                    </li>
+                </ol>
+            </address>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_wrap">
+            LOGOLOGo
+        </div>
+    </footer>
+</body>
+</html>
